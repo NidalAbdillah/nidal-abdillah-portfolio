@@ -1,0 +1,75 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+
+  /* Font configuration yang lebih optimal */
+  --font-family-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-family-mono: var(--font-inter), "SF Mono", Monaco, "Cascadia Code", monospace;
+}
+
+:root {
+  /* LIGHT THEME */
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+  --accent: #f59e0b;
+
+  /* GLOW EFFECTS */
+  --glow-primary: rgb(37 99 235 / 0.15);
+  --glow-secondary: rgb(37 99 235 / 0.08);
+
+  /* FONT VARIABLES - lebih spesifik */
+  --font-inter: var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.dark {
+  /* DARK THEME */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #ffffff;
+  --primary-foreground: #0a0a0a;
+  --muted: #171717;
+  --muted-foreground: #a3a3a3;
+  --border: #262626;
+  --accent: #f3f4f6;
+
+  /* GLOW EFFECTS */
+  --glow-primary: rgb(255 255 255 / 0.12);
+  --glow-secondary: rgb(255 255 255 / 0.06);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+  /* Tambahkan font smoothing */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Utility classes */
+.glow-primary {
+  box-shadow: 0 0 20px var(--glow-primary);
+}
+
+.glow-secondary {
+  box-shadow: 0 0 10px var(--glow-secondary);
+}
