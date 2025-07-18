@@ -17,8 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nidal Abdillah | Fullstack Developer",
-  description: "Portfolio profesional Nidal Abdillah dibangun dengan Next.js",
+  title: "Nidal Abdillah | Developer • DevOps • AI Engineer",
+  description: "Nidal Abdillah is a Fullstack Developer and DevOps Engineer with a passion for automation and AI-driven solutions.",
 };
 
 export default function RootLayout({
