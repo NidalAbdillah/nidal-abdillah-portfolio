@@ -21,21 +21,26 @@ export function ContactSection() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+  const res = await fetch("https://formspree.io/f/xpqyglnv", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData),
+  });
 
+  if (res.ok) {
     setSubmitStatus("success");
-    setIsSubmitting(false);
-
-    // Reset form after success
     setTimeout(() => {
       setFormData({ name: "", email: "", subject: "", message: "" });
       setSubmitStatus("idle");
     }, 3000);
-  };
+  } else {
+    setSubmitStatus("error");
+  }
+  setIsSubmitting(false);
+};
 
   // WhatsApp Icon Component
   const WhatsAppIcon = () => (
