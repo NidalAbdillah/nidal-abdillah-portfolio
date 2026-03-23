@@ -31,7 +31,7 @@ export function AboutSection() {
             <div className="relative w-full max-w-sm mx-auto">
               {/* Portrait Photo Container - Transparent background */}
               <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-muted/20 backdrop-blur-sm shadow-lg border border-border/20">
-                <Image src="/nidal-2.png" alt="Nidal Abdillah - Research Assistant at PT Telkom Indonesia" fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 350px" priority />
+                <Image src="/nidal-2.jpeg" alt="Nidal Abdillah - Research Assistant at PT Telkom Indonesia" fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 350px" priority />
                 <div className=" absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
               </div>
 

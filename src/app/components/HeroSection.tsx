@@ -10,7 +10,7 @@ export function HeroSection() {
   return (
     <section id="home" className="container mx-auto flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center px-4 text-center">
       <motion.div className="relative w-64 h-64 mb-8" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-        <Image src="/nidal-1.png" alt="Foto Profil Nidal Abdillah" fill className="rounded-full object-cover border-4 border-border shadow-lg glow-secondary" priority sizes="256px" />
+        <Image src="/nidal-1.jpeg" alt="Foto Profil Nidal Abdillah" fill className="rounded-full object-cover border-4 border-border shadow-lg glow-secondary" priority sizes="256px" />
         {/* Glow effect yang konsisten */}
         <div className="absolute inset-0 rounded-full opacity-0 dark:opacity-30 transition-opacity duration-300 bg-gradient-to-r from-[var(--glow-primary)] to-[var(--glow-secondary)] blur-xl -z-10" />
       </motion.div>

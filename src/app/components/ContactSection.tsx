@@ -48,8 +48,8 @@ export function ContactSection() {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "nidal.abdillah@example.com",
-      href: "mailto:nidal.abdillah@example.com",
+      value: "nidalallabdillah@gmail.com",
+      href: "mailto:nidalallabdillah@gmail.com",
     },
     {
       icon: <Phone className="w-5 h-5" />,

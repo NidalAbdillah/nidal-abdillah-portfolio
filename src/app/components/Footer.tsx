@@ -54,8 +54,8 @@ export function Footer() {
     {
       icon: <Mail className="w-4 h-4" />,
       label: "Email",
-      value: "nidal.abdillah@example.com",
-      href: "mailto:nidal.abdillah@example.com",
+      value: "nidalallabdillah@gmail.com",
+      href: "mailto:nidalallabdillah@gmail.com",
     },
     {
       icon: <Phone className="w-4 h-4" />,
